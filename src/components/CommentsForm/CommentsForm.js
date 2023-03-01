@@ -1,9 +1,10 @@
-import "./form.scss";
 import mohan from "../../assets/Images/Mohan.jpg";
+import "./CommentsForm.scss"
 
-function Form() {
+function CommentsForm() {
   return (
-    <section className="form">
+    <section className="comments">
+        <h2>3 comments</h2>
       <h2 className="form__title">Join The Conversation</h2>
       <div className="form__box">
         <div className="form__avatar">
@@ -22,7 +23,7 @@ function Form() {
         Comment
       </button>
     </section>
-  );
+  )
 }
 
-export default Form;
+export default CommentsForm

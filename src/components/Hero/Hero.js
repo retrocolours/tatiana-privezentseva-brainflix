@@ -2,13 +2,7 @@ import "./Hero.scss";
 
 function Hero() {
   return (
-    <section className="hero">
-      <video
-        className="hero__video"
-        controls
-        poster="https://i.imgur.com/l2Xfgpl.jpg"
-        src="https://project-2-api.herokuapp.com/stream"
-      ></video>
+    <section className="hero">  
       <h1>BMX Rampage: 2021 Highlights</h1>
       <ul>
         <li>By Red Crow</li>
@@ -25,7 +19,7 @@ function Hero() {
         won the event for the second time -- eight years after his first Red Cow
         Rampage title
       </p>
-      <p>3 comments</p>
+      
     </section>
   );
 }
