@@ -1,16 +1,14 @@
 import "./VideoPlayer.scss";
 
-
-function VideoPlayer () {
-return (
-<video
-        className="video"
-        controls
-        poster="https://i.imgur.com/l2Xfgpl.jpg"
-        src="https://project-2-api.herokuapp.com/stream"
-      ></video>
-)
-    }
-
+function VideoPlayer(props) {
+  return (
+    <video
+      className="video"
+      controls
+      poster={props.selectedVideo.image}
+      // src="https://project-2-api.herokuapp.com/stream"
+    ></video>
+  );
+}
 
 export default VideoPlayer;

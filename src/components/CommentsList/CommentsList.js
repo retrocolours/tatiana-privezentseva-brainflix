@@ -5,7 +5,7 @@ const CommentsList = (props) => {
   //console.log(props.comments);
   return (
     <section className="comments">
-      <ul id="comments__list" class="comments__list">
+      <ul id="comments__list" className="comments__list">
         {props.comments.map((comment) => {
           return (
             <Comment

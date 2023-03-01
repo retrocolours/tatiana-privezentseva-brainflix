@@ -1,14 +1,11 @@
+//import {useState} from 'react';
 
 
-
-function Button() {
+function Button(props) {
   return (
-    <button type="submit">Upload</button>
+    <button type="submit">{props.text}</button>
   )
 }
-
-
-
 
 // function Button (props) {
 //     return 

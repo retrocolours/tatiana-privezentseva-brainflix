@@ -6,11 +6,11 @@ function Header() {
   return (
     <header className="header">
       <img src={logo} className="header__logo" alt="logo" />
-      <form id="header__form" class="header__form">
-        <label for="search" class="header__label"></label>
+      <form id="header__form" className="header__form">
+        <label for="search" className="header__label"></label>
         <input
           id="search"
-          class="header__text"
+          className="header__text"
           type="text"
           placeholder="Search"
           name="searchBar"
