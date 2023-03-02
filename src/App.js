@@ -29,7 +29,7 @@ function App() {
   //const [darkMode, setDarkMode] = useState(false)
   const [videos] = useState(videosList); //array of vids
   const [selectedVideo, setSelectedVideo] = useState(videoData[0]); //single vid
-
+  // const [selectedDescription, setSelectedDescription] = useState(videoData[0]);
 
   const handleVideoClick = (id) => {
     const newVideo = videoData.find((video) => video.id === id);
@@ -41,9 +41,9 @@ function App() {
       {/* <div className={`app ${darkMode ? 'app--dark-mode' : ''}`}> */}
       <Header />
       <Button text="Upload" />
-      <VideoPlayer selectedVideo={selectedVideo}/>
-      <Hero />
-      <Comments />
+      <VideoPlayer selectedVideo={selectedVideo} />
+      <Hero selectedVideo={selectedVideo} />
+      <Comments selectedVideoComments={selectedVideo.comments} />
       {/* <CommentsForm /> */}
       <Button text="Comment" />
       {/* <CommentsList comments={selectedVideo.comments} /> */}
@@ -56,8 +56,8 @@ function App() {
       {/* <VideoCard /> */}
       {/* <button onClick={()=> setDarkMode(!darkMode)}>Toggle Dark Mode</button> */}
 
-      <img src={selectedVideo.url} alt={selectedVideo.description} />
-      {selectedVideo.id}
+      {/* <img src={selectedVideo.url} alt={selectedVideo.description} />
+      {selectedVideo.id} */}
 
       {/* </div> */}
 

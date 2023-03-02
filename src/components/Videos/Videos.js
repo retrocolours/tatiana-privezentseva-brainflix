@@ -10,12 +10,6 @@ function Videos(props) {
             <h2>{video.title}</h2>
             <p>{video.channel}</p>
             <img className="videos__image" src={video.image} />
-            {/* <p>{video.description}</p> */}
-            <p>{video.views}</p>
-            <p>{video.likes}</p>
-            <p>{video.duration}</p>
-            <video src={video.video}></video>
-            <p>{video.timestamp}</p>
           </div>
         ))}
     </div>
