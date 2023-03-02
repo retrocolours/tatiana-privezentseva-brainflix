@@ -13,7 +13,7 @@ const CommentsList = (props) => {
               commentAuthor={comment.name}
               commentComment={comment.comment}
               commentDate={comment.timestamp}
-              commentLike={comment.likes}
+          
             />
           );
         })}

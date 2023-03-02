@@ -1,11 +1,11 @@
 import "./Comments.scss";
 import mohan from "../../assets/Images/Mohan.jpg";
-import CommentsList from "../CommentsList/CommentsList";
+// import CommentsList from "../CommentsList/CommentsList";
 
-function Comments() {
+function Comments({selectedVideoComments}) {
   return (
     <section className="comments">
-      <h2>3 comments</h2>
+      <h2>{selectedVideoComments.length} comments</h2>
       <h2 className="comments__title">Join The Conversation</h2>
       <div className="comments__box">
         <div className="comments__avatar">

@@ -34,19 +34,19 @@ function App() {
   const handleVideoClick = (id) => {
     const newVideo = videoData.find((video) => video.id === id);
     setSelectedVideo(newVideo);
-    //try looking into .find method for arrays
+    
   };
   return (
     <>
       {/* <div className={`app ${darkMode ? 'app--dark-mode' : ''}`}> */}
       <Header />
-      <Button text="Upload" />
+      
       <VideoPlayer selectedVideo={selectedVideo} />
       <Hero selectedVideo={selectedVideo} />
       <Comments selectedVideoComments={selectedVideo.comments} />
       {/* <CommentsForm /> */}
       <Button text="Comment" />
-      {/* <CommentsList comments={selectedVideo.comments} /> */}
+      <CommentsList comments={selectedVideo.comments} />
       {/* <Comment /> */}
       <Videos
         videos={videos}

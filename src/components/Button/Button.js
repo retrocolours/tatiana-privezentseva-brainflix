@@ -1,9 +1,10 @@
 //import {useState} from 'react';
+import "./Button.scss"
 
 
 function Button(props) {
   return (
-    <button type="submit">{props.text}</button>
+    <button type="submit" className="btn">{props.text}</button>
   )
 }
 
