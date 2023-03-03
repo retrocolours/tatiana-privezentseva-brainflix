@@ -3,7 +3,6 @@ import { useState } from "react";
 import Header from "./components/Header/Header.js";
 import Hero from "./components/Hero/Hero.js";
 import CommentsForm from "./components/CommentsForm/CommentsForm.js";
-import CommentsList from "./components/CommentsList/CommentsList.js";
 import Comments from "./components/Comments/Comments.js";
 import Comment from "./components/Comment/Comment.js";
 import Button from "./components/Button/Button.js";
@@ -27,27 +26,27 @@ function App() {
   // };
 
   //const [darkMode, setDarkMode] = useState(false)
-  const [videos] = useState(videosList); //array of vids
+  const [videos, setVideoData] = useState(videosList); //array of vids
   const [selectedVideo, setSelectedVideo] = useState(videoData[0]); //single vid
   // const [selectedDescription, setSelectedDescription] = useState(videoData[0]);
 
   const handleVideoClick = (id) => {
     const newVideo = videoData.find((video) => video.id === id);
     setSelectedVideo(newVideo);
-    
   };
+
+ 
   return (
     <>
       {/* <div className={`app ${darkMode ? 'app--dark-mode' : ''}`}> */}
       <Header />
-      
+
       <VideoPlayer selectedVideo={selectedVideo} />
       <Hero selectedVideo={selectedVideo} />
       <Comments selectedVideoComments={selectedVideo.comments} />
       {/* <CommentsForm /> */}
       <Button text="Comment" />
-      <CommentsList comments={selectedVideo.comments} />
-      {/* <Comment /> */}
+      
       <Videos
         videos={videos}
         selectedVideo={selectedVideo}

@@ -1,8 +1,9 @@
 import "./Comments.scss";
 import mohan from "../../assets/Images/Mohan.jpg";
+import CommentsList from "../CommentsList/CommentsList";
 // import CommentsList from "../CommentsList/CommentsList";
 
-function Comments({selectedVideoComments}) {
+function Comments({ selectedVideoComments }) {
   return (
     <section className="comments">
       <h2>{selectedVideoComments.length} comments</h2>
@@ -20,8 +21,8 @@ function Comments({selectedVideoComments}) {
         cols="30"
         name="yourComment"
       ></textarea>
-     
-      {/* <CommentsList/> */}
+
+      <CommentsList comments={selectedVideoComments} />
     </section>
   );
 }

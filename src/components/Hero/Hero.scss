@@ -3,32 +3,62 @@
 @use "../../styles/partials/fonts" as *;
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: AvenirNext LT Pro;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: AvenirNext LT Pro;
+}
+
 .hero {
+  padding-left: 1rem;
+  padding-right: 1rem;
 
-    &__title {
-       margin: 1rem;
-       padding-bottom: 1rem;
-        font-weight: 600;
-        line-height: 2rem;
-        font-size: 1.5rem;
-        border-bottom: 1px solid $secondary-color2;
-    }
+  &__title {
+    margin-top: 0.7rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid $secondary-color2;
+  }
 
-    &__info-1, &__info-2 {
-        display: flex;
-        justify-content: space-between;
-    }
+  &__info-1,
+  &__info-2 {
+    display: flex;
+    padding-top: 0.7rem;
+    gap: 5rem;
+  }
 
-    &__name {
-        font-weight: 600;
-        font-size: 0.8rem;
-    }
-  
+  &__info-2 {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $secondary-color2;
+    gap: 5.5rem;
+  }
 
+  &__name {
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+
+  &__views,
+  &__likes {
+    background-image: url(../../assets/Icons/views.svg);
+    background-repeat: no-repeat;
+    background-position: center left 0.5rem;
+    padding-left: 2.3rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: $primary-color2;
+  }
+
+  &__likes {
+    background-image: url(../../assets/Icons/likes.svg);
+    padding-left: 2rem;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: $primary-color2;
+  }
 }

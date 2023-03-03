@@ -26,7 +26,7 @@
 
   &__logo {
     width: 100%;
-    height: 2rem;
+    height: 1.4rem;
   }
 
  
@@ -56,30 +56,33 @@ gap: 1rem;
   
  }
 
-  &__label {
-    color: $primary-color2;
-    font-size: 0.6rem;
-    font-weight: 600;
-    text-transform: uppercase;
-
-    @include tablet {
-      font-size: 0.7rem;
-    }
-  }
+ 
 
   &__text {
     background-color: $secondary-color3;
-    border: solid $secondary-color2;
-    border-radius: 5px;
+    border: 1px solid $secondary-color2;
+    border-radius: 4px;
     padding: 0.5rem;
     width: 100%;
+    height: 2.2rem;
     flex: 1;
+    background-image: url(../../assets/Icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: center left 0.5rem;
+    background-size: 1rem;
 
     // @include tablet {
     //   height: 6.2rem;
     // }
   }
 
+ 
 
+}
+
+::placeholder {
+  color: $secondary-color2;
+  padding-left: 1.5rem;
+  font-size: 0.8rem;
 
 }

@@ -7,13 +7,13 @@ function Hero(props) {
       <h1 className="hero__title">{props.selectedVideo.title}</h1>
 <div className="hero__info-1">
       <p className="hero__name">By {props.selectedVideo.channel}</p>
-      <p>{props.selectedVideo.views}</p>
+      <p className="hero__views">{props.selectedVideo.views}</p>
       
       </div>
       <div className="hero__info-2">
     
-      <p>{props.selectedVideo.timestamp}</p>
-      <p>{props.selectedVideo.likes}</p>
+      <p className="hero__date">{new Date(props.selectedVideo.timestamp).toLocaleDateString('en-GB')}</p>
+      <p className="hero__likes">{props.selectedVideo.likes}</p>
 </div>
       <p>{props.selectedVideo.description}</p>
     </section>
