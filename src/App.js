@@ -45,7 +45,7 @@ function App() {
       <Hero selectedVideo={selectedVideo} />
       <Comments selectedVideoComments={selectedVideo.comments} />
       {/* <CommentsForm /> */}
-      <Button text="Comment" />
+   
       
       <Videos
         videos={videos}

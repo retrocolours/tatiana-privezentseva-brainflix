@@ -25,7 +25,7 @@
   &__info-1,
   &__info-2 {
     display: flex;
-    padding-top: 0.7rem;
+    padding-top: 0.9rem;
     gap: 5rem;
   }
 
@@ -60,5 +60,11 @@
     font-weight: 400;
     font-size: 0.8rem;
     color: $primary-color2;
+  }
+
+  &__description {
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.125rem;
   }
 }

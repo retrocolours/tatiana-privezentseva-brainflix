@@ -1,18 +1,19 @@
 //import {useState} from 'react';
-import "./Button.scss"
-
+import "./Button.scss";
 
 function Button(props) {
   return (
-    <button type="submit" className="btn">{props.text}</button>
-  )
+    <button type="submit" className={`btn ${props.className}`}>
+      {props.text}
+    </button>
+  );
 }
 
 // function Button (props) {
-//     return 
+//     return
 //(
 //         <div className="button onClick={props.handleClick}">{props.content}</div>
 //     )
 // }
 
- export default Button;
+export default Button;

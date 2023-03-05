@@ -21,7 +21,7 @@ function Header() {
           </form>
 
           <img src={mohan} className="header__avatar" alt="avatar" />
-          <Button text="Upload" />
+          <Button className="btn--upload" text="Upload" />
         </div>
       </div>
     </header>

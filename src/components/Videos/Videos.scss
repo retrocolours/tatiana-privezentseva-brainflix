@@ -1,5 +1,31 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/fonts" as *;
+
 .videos {
-    &__image {
-       height: 5rem;
-    }
+  &__title {
+    font-size: 0.8rem;
+    color: $primary-color2;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+  }
+
+  &__image {
+    height: 5rem;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  &__box {
+    object-position: left;
+  }
+
+  &__info {
+    object-position: right;
+  }
 }
