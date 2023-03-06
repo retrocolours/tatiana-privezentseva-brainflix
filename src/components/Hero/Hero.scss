@@ -18,6 +18,11 @@
     padding-right: 2rem;
   }
 
+  @include desktop {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &__title {
     color: $primary-color1;
     margin-top: 0.7rem;
@@ -31,6 +36,10 @@
       font-size: 2rem;
       border-bottom: none;
       margin-top: 1.4rem;
+    }
+
+    @include desktop {
+      padding-top: 1rem;
     }
   }
 
@@ -58,6 +67,10 @@
       padding-right: 0.5rem;
       order: 1;
     }
+
+    @include desktop {
+      font-size: 0.9rem;
+    }
   }
 
   &__views,
@@ -81,6 +94,7 @@
       order: 3;
       padding-right: 4rem;
     }
+
   }
 
   &__likes {
@@ -103,6 +117,11 @@
       order: 2;
       padding-right: 24rem;
     }
+
+    @include desktop {
+      padding-right: 22rem;
+      padding-top: 0.1rem;
+    }
   }
 
   &__description {
@@ -113,6 +132,11 @@
     @include tablet {
       font-size: 0.9rem;
       line-height: 1.3rem;
+    }
+
+    @include desktop {
+      padding-right: 1rem;
+      line-height: 1.5rem;
     }
   }
 }

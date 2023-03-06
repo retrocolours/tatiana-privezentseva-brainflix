@@ -17,7 +17,7 @@
     color: $primary-color2;
     text-transform: uppercase;
     padding-bottom: 1rem;
-    
+
     @include tablet {
       padding-bottom: 1.6rem;
     }
@@ -53,10 +53,17 @@
     line-height: 1.125rem;
     margin-bottom: 0.4rem;
     color: $primary-color1;
+
+    @include desktop {
+      line-height: 1.2rem;
+    }
   }
 
   &__channel {
     font-size: 0.8rem;
     line-height: 18px;
+    @include desktop {
+      font-size: 0.9rem;
+    }
   }
 }

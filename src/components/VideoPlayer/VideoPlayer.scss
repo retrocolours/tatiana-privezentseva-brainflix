@@ -13,12 +13,14 @@
   max-width: 100%;
   width: 100%;
   background-color: $secondary-color1;
+  cursor: pointer;
 
   @include tablet {
     padding: 0 2rem;
   }
 
   @include desktop {
-    padding: 0 10rem;
+    padding: 0 14rem;
+    height: 30rem;
   }
 }

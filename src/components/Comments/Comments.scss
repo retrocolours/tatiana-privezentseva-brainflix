@@ -21,12 +21,20 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;
+
+    @include desktop {
+      padding-top: 3rem;
+    }
   }
 
   &__number {
     font-size: 0.8rem;
     font-weight: 700;
     padding-bottom: 1rem;
+
+    @include desktop {
+      font-size: 0.9rem;
+    }
   }
 
   &__box {
@@ -35,6 +43,10 @@
     gap: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #e1e1e1;
+
+    @include desktop {
+      gap: 2rem;
+    }
   }
 
   &__form {
@@ -46,6 +58,7 @@
       padding-top: 1rem;
     }
   }
+
   &__image {
     width: 36px;
     height: 34px;
@@ -58,6 +71,11 @@
       width: 40px;
       height: 39px;
       margin-top: 2rem;
+    }
+
+    @include desktop {
+      width: 43px;
+      height: 42px;
     }
   }
 
@@ -115,6 +133,10 @@
       padding-top: 0.5rem;
       padding-bottom: 1.5rem;
     }
+
+    @include desktop {
+      gap: 2rem;
+    }
   }
 
   &__main {
@@ -135,6 +157,11 @@
     @include tablet {
       width: 40px;
       height: 39px;
+    }
+
+    @include desktop {
+      width: 43px;
+      height: 42px;
     }
   }
 
@@ -170,4 +197,9 @@
   color: $secondary-color1;
   font-size: 0.8rem;
   padding: 0.1rem 0;
+
+  @include desktop {
+    padding-left: 1rem;
+    font-size: 0.9rem;
+  }
 }
