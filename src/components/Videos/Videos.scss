@@ -3,9 +3,8 @@
 @use "../../styles/partials/fonts" as *;
 
 .videos {
-
-    padding-left: 1rem;
-    padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   &__title {
     font-size: 0.8rem;
@@ -21,34 +20,32 @@
     cursor: pointer;
 
     @include tablet {
-        width: 18rem;
+      width: 18rem;
     }
   }
 
   &__image {
     background-color: $secondary-color2;
     border-radius: 4px;
-    width: 6.9rem;
-    height: 3.9rem;
+    width: 6.5rem;
+    height: 3.8rem;
     object-fit: cover;
   }
 
   &__info {
     align-self: center;
-    // height: 18px;
-    // overflow: hidden;
   }
 
-&__name {
-font-size: 0.8rem;
-font-weight: 700;
-line-height: 1.125rem;
-margin-bottom: 0.5rem;
-color: $primary-color1;
-}
+  &__name {
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.125rem;
+    margin-bottom: 0.4rem;
+    color: $primary-color1;
+  }
 
-&__channel {
+  &__channel {
     font-size: 0.8rem;
     line-height: 18px;
-}
+  }
 }

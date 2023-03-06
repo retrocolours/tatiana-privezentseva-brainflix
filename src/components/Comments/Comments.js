@@ -23,7 +23,6 @@ function Comments({ selectedVideoComments }) {
               id="comment"
               className="comments__text"
               placeholder="Add a new comment"
-              
               name="yourComment"
             ></textarea>
           </div>

@@ -15,7 +15,7 @@ const Comment = (props) => {
             })}
           </p>
         </div>
-        <p>{props.commentComment}</p>
+        <p className="comments__opinion">{props.commentComment}</p>
         {/* <p>{props.commentLike}</p> */}
       </div>
     </li>
