@@ -8,10 +8,10 @@ function Videos(props) {
       {props.videos
         .filter((video) => video.id !== props.selectedVideo.id)
         .map((video) => (
-          <div className="videos__box">
+          <div className="videos__box" key={video.id}> 
             <div
               className="videos__picture"
-              key={video.id}
+              
               onClick={() => props.handleVideoClick(video.id)}
             >
               <img className="videos__image" src={video.image} />

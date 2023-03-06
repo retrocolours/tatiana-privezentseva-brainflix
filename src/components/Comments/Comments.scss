@@ -24,6 +24,7 @@
 
     @include desktop {
       padding-top: 3rem;
+      padding-right: 0;
     }
   }
 
@@ -46,6 +47,7 @@
 
     @include desktop {
       gap: 2rem;
+      padding-right: 2rem;
     }
   }
 
@@ -136,6 +138,7 @@
 
     @include desktop {
       gap: 2rem;
+      padding-right: 2rem;
     }
   }
 
