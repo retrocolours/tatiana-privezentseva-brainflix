@@ -1,0 +1,61 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixin" as *;
+@use "../../styles/partials/fonts" as *;
+
+.form {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    border-top: 1px solid $secondary-color2;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  &__subtitle,
+  &__label--title,
+  &__label--description {
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $primary-color2;
+    padding-bottom: 0.2rem;
+  }
+
+  &__label--title {
+    padding-top: 1rem;
+  }
+
+  &__thumbnail {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input--title,
+  &__input--description {
+    background-color: $secondary-color3;
+    border: 1px solid $secondary-color2;
+    border-radius: 5px;
+    padding: 0.5rem;
+    resize: none;
+    margin-bottom: 1rem;
+  }
+
+  &__input--title {
+    height: 2.6rem;
+  }
+
+  &__input--description {
+    height: 5.5rem;
+  }
+}

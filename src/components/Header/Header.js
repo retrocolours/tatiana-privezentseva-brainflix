@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+// import { NavLink } from "react-router-dom"
 import "./Header.scss";
 import Button from "../Button/Button";
 import logo from "../../assets/Logo/logo.svg";
@@ -7,7 +9,9 @@ function Header() {
   return (
     <header className="header">
       <div className="header__container">
-        <img src={logo} className="header__logo" alt="logo" />
+        <Link to="/" title="home">
+          <img src={logo} className="header__logo" alt="logo" />
+        </Link>
         <div className="header__search">
           <form id="header__form" className="header__form">
             <label htmlFor="search" className="header__label"></label>
@@ -20,7 +24,9 @@ function Header() {
             />
           </form>
           <img src={mohan} className="header__avatar" alt="avatar" />
-          <Button className="btn--upload" text="Upload" />
+          {/* <Link to="/upload" title="upload"> */}
+          <Button className="btn--upload" text="Upload" link="/upload" />
+          {/* </Link> */}
         </div>
       </div>
     </header>
