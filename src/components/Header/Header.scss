@@ -20,6 +20,8 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
@@ -61,7 +63,7 @@
     gap: 1rem;
 
     @include tablet {
-      width: 62%;
+      width: 69%;
     }
 
     @include desktop {

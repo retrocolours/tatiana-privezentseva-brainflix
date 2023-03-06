@@ -17,6 +17,12 @@
   padding-right: 1rem;
   padding-top: 1rem;
 
+  @include tablet {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+  }
+
   &__number {
     font-size: 0.8rem;
     font-weight: 700;
@@ -29,10 +35,6 @@
     gap: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #e1e1e1;
-
-    @include tablet {
-      padding-bottom: 2rem;
-    }
   }
 
   &__form {
@@ -40,7 +42,8 @@
       display: flex;
       flex-grow: 1;
       width: 100%;
-      gap: 1rem;
+      gap: 1.2rem;
+      padding-top: 1rem;
     }
   }
   &__image {
@@ -52,20 +55,21 @@
     margin-top: 1.3rem;
 
     @include tablet {
-      width: 50px;
-      height: 49px;
+      width: 40px;
+      height: 39px;
+      margin-top: 2rem;
     }
   }
 
   &__label {
     color: $primary-color2;
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 0.3rem;
 
     @include tablet {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -80,7 +84,7 @@
     resize: none;
 
     @include tablet {
-      height: 2.4rem;
+      height: 2.6rem;
     }
   }
 
@@ -106,6 +110,11 @@
     gap: 1rem;
     border-bottom: 1px solid #e1e1e1;
     padding-bottom: 0.8rem;
+
+    @include tablet {
+      padding-top: 0.5rem;
+      padding-bottom: 1.5rem;
+    }
   }
 
   &__main {
@@ -124,8 +133,8 @@
     background-color: $secondary-color2;
 
     @include tablet {
-      width: 50px;
-      height: 49px;
+      width: 40px;
+      height: 39px;
     }
   }
 
@@ -140,11 +149,20 @@
   &__author {
     font-weight: 700;
     color: $primary-color1;
+
+    @include tablet {
+      font-size: 0.9rem;
+    }
   }
 
   &__opinion {
     line-height: 1.1rem;
     font-size: 0.8rem;
+
+    @include tablet {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+    }
   }
 }
 

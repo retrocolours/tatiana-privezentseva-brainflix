@@ -13,31 +13,51 @@
   padding-left: 1rem;
   padding-right: 1rem;
 
+  @include tablet {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   &__title {
+    color: $primary-color1;
     margin-top: 0.7rem;
     padding-bottom: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 2rem;
     font-size: 1.5rem;
     border-bottom: 1px solid $secondary-color2;
+
+    @include tablet {
+      font-size: 2rem;
+      border-bottom: none;
+      margin-top: 1.4rem;
+    }
   }
 
-  &__info-1,
-  &__info-2 {
+  &__container {
     display: flex;
-    padding-top: 0.9rem;
-    gap: 5rem;
-  }
-
-  &__info-2 {
+    flex-wrap: wrap;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid $secondary-color2;
-    gap: 5.5rem;
+    width: 100%;
+    gap: 0.7rem;
+
+    @include tablet {
+      flex-direction: row;
+      padding-top: 0;
+    }
   }
 
   &__name {
     font-weight: 700;
     font-size: 0.8rem;
+    padding-right: 2.7rem;
+
+    @include tablet {
+      padding-right: 0.5rem;
+      order: 1;
+    }
   }
 
   &__views,
@@ -49,22 +69,50 @@
     font-weight: 400;
     font-size: 0.8rem;
     color: $primary-color2;
+    width: 50%;
+
+    @include tablet {
+      width: 10%;
+    }
+  }
+
+  &__views {
+    @include tablet {
+      order: 3;
+      padding-right: 4rem;
+    }
   }
 
   &__likes {
     background-image: url(../../assets/Icons/likes.svg);
     padding-left: 2rem;
+
+    @include tablet {
+      order: 4;
+    }
   }
 
   &__date {
     font-weight: 400;
     font-size: 0.8rem;
     color: $primary-color2;
+    padding-right: 3.3rem;
+
+    @include tablet {
+      width: 10%;
+      order: 2;
+      padding-right: 24rem;
+    }
   }
 
   &__description {
     padding-top: 1rem;
     font-size: 0.8rem;
     line-height: 1.125rem;
+
+    @include tablet {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+    }
   }
 }

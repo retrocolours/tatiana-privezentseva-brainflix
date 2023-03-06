@@ -31,10 +31,11 @@
       padding: 0.7rem 2.5rem;
       margin-left: auto;
       height: 2.4rem;
-      width: 34%;
+      width: 32%;
       border-radius: 4px;
       order: 2;
       margin-left: 0.5rem;
+      font-size: 0.7rem;
     }
 
     @include desktop {
@@ -64,7 +65,8 @@
     background-size: 1.3rem;
 
     @include tablet {
-      width: 30%;
+      width: 27%;
+      height: 2.5rem;
       margin-top: 1.3rem;
     }
   }
