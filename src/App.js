@@ -12,9 +12,8 @@ import VideoCard from "./components/VideoCard/VideoCard.js";
 // import videoData from "./assets/Data/videos.json";
 import videoData from "./assets/Data/video-details.json";
 import videosList from "./assets/Data/videos.json";
-
 import "./App.scss";
-console.log(videoData);
+
 
 function App() {
   // const handleClick = () => {
@@ -40,18 +39,20 @@ function App() {
     <>
       {/* <div className={`app ${darkMode ? 'app--dark-mode' : ''}`}> */}
       <Header />
-
       <VideoPlayer selectedVideo={selectedVideo} />
-      <Hero selectedVideo={selectedVideo} />
-      <Comments selectedVideoComments={selectedVideo.comments} />
+<div className="wrapper">
+        <div className="container">
+          <Hero selectedVideo={selectedVideo} />
+          <Comments selectedVideoComments={selectedVideo.comments} />
+        </div>
       {/* <CommentsForm /> */}
-   
-      
+        
       <Videos
         videos={videos}
         selectedVideo={selectedVideo}
         handleVideoClick={handleVideoClick}
       />
+      </div>
       {/* <VideoCard /> */}
       {/* <button onClick={()=> setDarkMode(!darkMode)}>Toggle Dark Mode</button> */}
 

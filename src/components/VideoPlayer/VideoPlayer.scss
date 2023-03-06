@@ -9,9 +9,16 @@
   font-family: AvenirNext LT Pro;
 }
 
-
 .video {
-    max-width: 100%;
+  max-width: 100%;
   width: 100%;
+  background-color: $secondary-color1;
 
+  @include tablet {
+    padding: 0 2rem;
+  }
+
+  @include desktop {
+    padding: 0 10rem;
+  }
 }

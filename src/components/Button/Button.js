@@ -1,4 +1,3 @@
-//import {useState} from 'react';
 import "./Button.scss";
 
 function Button(props) {
@@ -8,12 +7,5 @@ function Button(props) {
     </button>
   );
 }
-
-// function Button (props) {
-//     return
-//(
-//         <div className="button onClick={props.handleClick}">{props.content}</div>
-//     )
-// }
 
 export default Button;

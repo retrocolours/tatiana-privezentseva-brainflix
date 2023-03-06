@@ -18,6 +18,7 @@
 
     @include tablet {
       flex-direction: row;
+      align-items: center;
       justify-content: space-between;
     }
   }
@@ -40,6 +41,8 @@
 
     @include tablet {
       order: 3;
+      width: 2.5rem;
+      height: 2.5rem;
     }
   }
 
@@ -58,11 +61,11 @@
     gap: 1rem;
 
     @include tablet {
-      width: 60%;
+      width: 62%;
     }
 
     @include desktop {
-      width: 90%;
+      width: 40%;
     }
   }
 
@@ -81,6 +84,7 @@
 
     @include tablet {
       padding-left: 2rem;
+      height: 2.5rem;
     }
   }
 }

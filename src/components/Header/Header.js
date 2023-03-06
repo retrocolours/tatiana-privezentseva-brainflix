@@ -19,7 +19,6 @@ function Header() {
               name="searchBar"
             />
           </form>
-
           <img src={mohan} className="header__avatar" alt="avatar" />
           <Button className="btn--upload" text="Upload" />
         </div>

@@ -14,21 +14,21 @@ function Comments({ selectedVideoComments }) {
       <div className="comments__box">
         <img className="comments__image" src={mohan} alt="avatar" />
 
-        <div className="comments__form">
-          <label htmlFor="comment" className="comments__label">
-            Join the Conversation
-          </label>
-          <textarea
-            id="comment"
-            className="comments__text"
-            placeholder="Add a new comment"
-            rows="5"
-            cols="32"
-            name="yourComment"
-          ></textarea>
-
+        <form className="comments__form">
+          <div className="comments__wrapper">
+            <label htmlFor="comment" className="comments__label">
+              Join the Conversation
+            </label>
+            <textarea
+              id="comment"
+              className="comments__text"
+              placeholder="Add a new comment"
+              
+              name="yourComment"
+            ></textarea>
+          </div>
           <Button className="btn--comment" text="Comment" />
-        </div>
+        </form>
       </div>
       <CommentsList comments={selectedVideoComments} />
     </section>

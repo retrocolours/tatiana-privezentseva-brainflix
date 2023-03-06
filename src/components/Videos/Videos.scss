@@ -3,6 +3,10 @@
 @use "../../styles/partials/fonts" as *;
 
 .videos {
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
   &__title {
     font-size: 0.8rem;
     color: $primary-color2;
@@ -10,22 +14,41 @@
     padding-bottom: 1rem;
   }
 
-  &__image {
-    height: 5rem;
-  }
-
-  &__cards {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1rem;
-    gap: 1rem;
-  }
-
   &__box {
-    object-position: left;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+
+    @include tablet {
+        width: 18rem;
+    }
+  }
+
+  &__image {
+    background-color: $secondary-color2;
+    border-radius: 4px;
+    width: 6.9rem;
+    height: 3.9rem;
+    object-fit: cover;
   }
 
   &__info {
-    object-position: right;
+    align-self: center;
+    // height: 18px;
+    // overflow: hidden;
   }
+
+&__name {
+font-size: 0.8rem;
+font-weight: 700;
+line-height: 1.125rem;
+margin-bottom: 0.5rem;
+color: $primary-color1;
+}
+
+&__channel {
+    font-size: 0.8rem;
+    line-height: 18px;
+}
 }

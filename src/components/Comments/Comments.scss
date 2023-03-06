@@ -23,9 +23,6 @@
     padding-bottom: 1rem;
   }
 
-  &__text {
-    resize: none;
-  }
 
   &__box {
     display: flex;
@@ -35,14 +32,21 @@
     border-bottom: 1px solid #e1e1e1;
 
     @include tablet {
-      justify-content: center;
+    
       padding-bottom: 2rem;
     }
   }
 
   &__form {
-    display: flex;
-    flex-direction: column;
+    
+
+    @include tablet {
+      display: flex;
+      flex-grow: 1;
+      width: 100%;
+      gap: 1rem;
+     
+    }
   }
   &__image {
     width: 36px;
@@ -75,10 +79,20 @@
     border: solid $secondary-color2;
     border-radius: 5px;
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    margin: 0.25rem 0 1rem;
+    width: 100%;
+    height: 6rem;
+    resize: none;
 
     @include tablet {
-      height: 6.2rem;
+      height: 2.4rem;
+    }
+    
+  }
+
+  &__wrapper {
+    @include tablet {
+      width: 80%;
     }
   }
 
