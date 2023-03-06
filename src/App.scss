@@ -2,11 +2,10 @@
 @use "./styles/partials/mixin" as *;
 @use "./styles/partials/fonts" as *;
 
-
 .wrapper {
   @include desktop {
     display: flex;
-padding: 0 6rem 0 9rem;
+    padding: 0 6rem 0 9rem;
   }
 }
 
