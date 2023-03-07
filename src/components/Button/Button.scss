@@ -52,6 +52,11 @@
 
   &--publish {
     background-image: url(../../assets/Icons/publish.svg);
+    @include tablet {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      width: 22%;
+    }
    
   }
 
@@ -65,6 +70,12 @@
     text-decoration: none;
     text-align: center;
     margin-top: 2rem;
+    @include tablet {
+      width: 20%;
+      margin-top: 2.6rem;
+      font-size: 0.7rem;
+    }
+   
   }
 
   &--comment {

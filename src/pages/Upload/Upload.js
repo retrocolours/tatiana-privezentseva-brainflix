@@ -41,9 +41,10 @@ function Upload() {
               cols="30"
               name="videoDescription"
             ></textarea>
-            <hr />
+            <div className="form__buttons">
             <Button className="btn--publish" text="Publish" link="/" />
             <Button className="btn--cancel" text="Cancel" link="/" />
+            </div>
           </form>
         </div>
       </section>
