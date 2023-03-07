@@ -3,8 +3,6 @@
 @use "../../styles/partials/fonts" as *;
 
 .form {
-  padding-left: 1rem;
-  padding-right: 1rem;
   display: flex;
   flex-direction: column;
   &__title {
@@ -14,6 +12,28 @@
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
+    color: $primary-color1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include tablet {
+      font-size: 33px;
+      line-height: 44px;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    
+    }
+  }
+
+  &__container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @include tablet {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      border-top: 1px solid $secondary-color2;
+      padding-top: 2rem;
+    }
   }
 
   &__subtitle,
@@ -25,7 +45,11 @@
     text-transform: uppercase;
     color: $primary-color2;
     padding-bottom: 0.2rem;
+
+
   }
+
+
 
   &__label--title {
     padding-top: 1rem;
@@ -34,6 +58,11 @@
   &__thumbnail {
     width: 100%;
     border-radius: 6px;
+    @include tablet {
+        width: 50%;
+        display: block;
+        margin-top: 0.2rem;
+    }
   }
 
   &__form {
@@ -57,5 +86,13 @@
 
   &__input--description {
     height: 5.5rem;
+
+  }
+
+  ::placeholder {
+    @include tablet {
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+    }
   }
 }
