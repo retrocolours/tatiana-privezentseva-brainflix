@@ -11,13 +11,14 @@ function Upload() {
       <section className="form">
         <h1 className="form__title">Upload Video</h1>
         <div className="form__container">
+          <div className="form__box">
           <label className="form__subtitle">Video Thumbnail</label>
           <img
             src={UploadVideo}
             className="form__thumbnail"
             alt="thumbnail"
           ></img>
-
+          </div>
           <form id="form__form" className="form__form">
             <label htmlFor="name" className="form__label--title">
               Title your video
@@ -41,12 +42,14 @@ function Upload() {
               cols="30"
               name="videoDescription"
             ></textarea>
-            <div className="form__buttons">
+            
+          </form>
+
+        </div>
+        <div className="form__buttons">
             <Button className="btn--publish" text="Publish" link="/" />
             <Button className="btn--cancel" text="Cancel" link="/" />
             </div>
-          </form>
-        </div>
       </section>
     </>
   );

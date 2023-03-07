@@ -57,7 +57,10 @@
       margin-left: 2rem;
       width: 22%;
     }
-   
+    @include desktop {
+      font-size: 0.8rem;
+      width: 15%;
+    }
   }
 
   &--cancel {
@@ -75,7 +78,10 @@
       margin-top: 2.6rem;
       font-size: 0.7rem;
     }
-   
+    @include desktop {
+      font-size: 0.8rem;
+      width: 15%;
+    }
   }
 
   &--comment {

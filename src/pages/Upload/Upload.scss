@@ -5,8 +5,9 @@
 .form {
   display: flex;
   flex-direction: column;
+  border-top: 1px solid $secondary-color2;
+
   &__title {
-    border-top: 1px solid $secondary-color2;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 24px;
@@ -19,8 +20,14 @@
     @include tablet {
       font-size: 33px;
       line-height: 44px;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      padding-left: 0;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    @include desktop {
+      margin-left: 8rem;
+     
     }
   }
 
@@ -32,6 +39,14 @@
       margin-right: 2rem;
       border-top: 1px solid $secondary-color2;
       padding-top: 2rem;
+    }
+
+    @include desktop {
+      display: flex;
+      margin-left: 8rem;
+      margin-right: 6rem;
+      margin-bottom: 1rem;
+      justify-content: space-between;
     }
   }
 
@@ -58,11 +73,25 @@
       display: block;
       margin-top: 0.2rem;
     }
+    @include desktop {
+      width: 100%;
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
+    @include desktop {
+      width: 65%;
+    }
+  }
+
+  &__box {
+    @include desktop {
+      width: 31%;
+      padding-top: 0.8rem;
+     
+    }
   }
 
   &__input--title,
@@ -93,12 +122,21 @@
   &__buttons {
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
     @include tablet {
       border-top: 1px solid $secondary-color2;
       flex-direction: row;
       justify-content: flex-end;
       align-items: baseline;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    @include desktop {
+        margin-right: 6rem;
+        margin-left: 8rem;
     }
   }
 }
