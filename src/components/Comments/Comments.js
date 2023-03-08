@@ -5,6 +5,7 @@ import CommentsList from "../CommentsList/CommentsList";
 // import CommentsList from "../CommentsList/CommentsList";
 
 function Comments({ selectedVideoComments }) {
+  if (!selectedVideoComments) return;
   return (
     <section className="comments">
       <p className="comments__number">
