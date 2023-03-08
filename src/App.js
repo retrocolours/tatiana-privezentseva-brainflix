@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-// import Header from "./components/Header/Header.js";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header.js";
 // import Hero from "./components/Hero/Hero.js";
 // import Comments from "./components/Comments/Comments.js";
 
@@ -14,7 +14,7 @@ import Upload from "./pages/Upload/Upload";
 
 import "./App.scss";
 // import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
-import Videos from "./components/Videos/Videos"
+
 
 function App() {
   // const [videos, setVideoData] = useState(videosList); //array of vids
@@ -28,12 +28,12 @@ function App() {
   return (
     <>
       <BrowserRouter>
- 
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/upload" element={<Upload />} />
           {/* <Route path="*" element={<NotFound />} /> */}
-          <Route path="videos/:videoId" element={<Home/>} />
+          <Route path="videos/:videoId" element={<Home />} />
         </Routes>
         {/* <Header />
         <VideoPlayer selectedVideo={selectedVideo} />

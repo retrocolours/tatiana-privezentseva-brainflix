@@ -1,15 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import Header from "../../components/Header/Header";
 import Hero from "../../components/Hero/Hero";
 import Comments from "../../components/Comments/Comments";
 
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 import Videos from "../../components/Videos/Videos";
 
-// import videoData from "../../assets/Data/video-details.json";
-// import videosList from "../../assets/Data/videos.json";
 import axios from "axios";
 
 const APIKey = "936f21f8-40f8-4c80-bb61-833290fc9c15";
@@ -19,11 +16,6 @@ function Home() {
   const [videos, setVideoData] = useState([]); //array of vids
   const [selectedVideo, setSelectedVideo] = useState({}); //single vid
   const { videoId } = useParams();
-
-  // const handleVideoClick = (id) => {
-  //   const newVideo = videoData.find((video) => video.id === id);
-  //   setSelectedVideo(newVideo);
-  // }; //changing the url
 
   useEffect(() => {
     getVideos();
@@ -61,7 +53,7 @@ function Home() {
 
   return (
     <>
-      <Header />
+
       <VideoPlayer selectedVideo={selectedVideo} />
       <div className="wrapper">
         <div className="container">
