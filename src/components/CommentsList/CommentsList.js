@@ -1,4 +1,3 @@
-import "./CommentsList.scss";
 import Comment from "../Comment/Comment.js";
 
 const CommentsList = (props) => {

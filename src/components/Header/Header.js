@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import { NavLink } from "react-router-dom"
 import "./Header.scss";
 import Button from "../Button/Button";
 import logo from "../../assets/Logo/logo.svg";
@@ -24,9 +23,7 @@ function Header() {
             />
           </form>
           <img src={mohan} className="header__avatar" alt="avatar" />
-          {/* <Link to="/upload" title="upload"> */}
           <Button className="btn--upload" text="Upload" link="/upload" />
-          {/* </Link> */}
         </div>
       </div>
     </header>

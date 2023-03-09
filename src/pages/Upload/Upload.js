@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button/Button";
 import UploadVideo from "../../assets/Images/UploadVideo.jpg";
-// import { useNavigate } from "react-router-dom";
 import "./Upload.scss";
 
 function Upload() {
@@ -81,9 +80,6 @@ function Upload() {
                 ></textarea>
               </div>
             </div>
-            {/* <button className="btn--publish" type="submit">
-              Publish
-            </button> */}
             <div className="form__buttons">
               <Button className="btn--cancel" text="Cancel" link="/" />
               <Button type="button" className="btn--publish" text="Publish" />

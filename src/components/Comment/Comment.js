@@ -1,5 +1,3 @@
-import "./Comment.scss";
-
 const Comment = (props) => {
   return (
     <li className="comments__item">

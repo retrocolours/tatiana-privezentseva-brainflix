@@ -2,7 +2,6 @@ import "./Comments.scss";
 import Button from "../Button/Button.js";
 import mohan from "../../assets/Images/Mohan.jpg";
 import CommentsList from "../CommentsList/CommentsList";
-// import CommentsList from "../CommentsList/CommentsList";
 
 function Comments({ selectedVideoComments }) {
   if (!selectedVideoComments) return;

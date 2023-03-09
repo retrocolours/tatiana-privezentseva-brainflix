@@ -13,8 +13,8 @@ const APIKey = "936f21f8-40f8-4c80-bb61-833290fc9c15";
 const api = "https://project-2-api.herokuapp.com";
 
 function Home() {
-  const [videos, setVideoData] = useState([]); //array of vids
-  const [selectedVideo, setSelectedVideo] = useState({}); //single vid
+  const [videos, setVideoData] = useState([]); //array of videos
+  const [selectedVideo, setSelectedVideo] = useState({}); //single video
   const { videoId } = useParams();
 
   useEffect(() => {
@@ -53,18 +53,13 @@ function Home() {
 
   return (
     <>
-
       <VideoPlayer selectedVideo={selectedVideo} />
       <div className="wrapper">
         <div className="container">
           <Hero selectedVideo={selectedVideo} />
           <Comments selectedVideoComments={selectedVideo.comments} />
         </div>
-        <Videos
-          videos={videos}
-          selectedVideo={selectedVideo}
-          // handleVideoClick={handleVideoClick}
-        />
+        <Videos videos={videos} selectedVideo={selectedVideo} />
       </div>
     </>
   );
