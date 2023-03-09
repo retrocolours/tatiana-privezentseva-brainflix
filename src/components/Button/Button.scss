@@ -50,17 +50,24 @@
     }
   }
 
+  &--upload {
+    @include desktop {
+      font-size: 0.8rem;
+    }
+  }
+
   &--publish {
+    padding-top: 0rem;
     background-image: url(../../assets/Icons/publish.svg);
     @include tablet {
       margin-top: 2rem;
       margin-left: 2rem;
-      width: 22%;
+      width: 24%;
     }
     @include desktop {
       font-size: 0.8rem;
-      width: 35%;
-      height: 2.5rem
+      width: 19%;
+      height: 2.6rem;
     }
   }
 
