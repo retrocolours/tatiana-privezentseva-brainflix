@@ -2,6 +2,9 @@ import "./Videos.scss";
 import { Link } from "react-router-dom";
 
 function Videos(props) {
+  function scrollToTop() {
+    window.scrollTo({top: 0, behavior: "smooth"})
+  }
   return (
     <section className="videos">
       <h2 className="videos__title">Next Videos</h2>
@@ -13,6 +16,7 @@ function Videos(props) {
             className="videos__box"
             key={video.id}
             to={`/videos/${video.id}`}
+            onClick={scrollToTop}
           >
             <div className="videos__picture">
               <img className="videos__image" src={video.image} alt="video" />

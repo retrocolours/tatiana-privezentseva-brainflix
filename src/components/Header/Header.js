@@ -6,10 +6,11 @@ import mohan from "../../assets/Images/Mohan.jpg";
 
 function Header({ DarkMode, setDarkMode }) {
   return (
-    <header className={`header ${DarkMode ? `header--dark-mode` : ``}`}>
+    <header className={`header ${DarkMode ? `header--dark-mode` : ``}`}> 
+    {/* test dark mode for the header */}
       <div className="header__container">
         <Link to="/" title="home">
-          <img src={logo} className="header__logo" alt="logo" />
+          <img src={logo} className="header__logo header__logo--dark-mode" alt="logo" />
         </Link>
         <button
           className="toggle"
@@ -17,7 +18,6 @@ function Header({ DarkMode, setDarkMode }) {
         ></button>
         <div className="header__search">
           <form id="header__form" className="header__form">
-            <label htmlFor="search" className="header__label"></label>
             <input
               id="search"
               className="header__text"

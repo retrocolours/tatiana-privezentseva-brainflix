@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import Hero from "../../components/Hero/Hero";
+import VideoDetails from "../../components/VideoDetails/VideoDetails";
 import Comments from "../../components/Comments/Comments";
 
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
@@ -56,7 +56,7 @@ function Home() {
       <VideoPlayer selectedVideo={selectedVideo} />
       <div className="wrapper">
         <div className="container">
-          <Hero selectedVideo={selectedVideo} />
+          <VideoDetails selectedVideo={selectedVideo} />
           <Comments selectedVideoComments={selectedVideo.comments} />
         </div>
         <Videos videos={videos} selectedVideo={selectedVideo} />
