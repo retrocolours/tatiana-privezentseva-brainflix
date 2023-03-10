@@ -68,6 +68,13 @@
     }
   }
 
+  &__info-2 {
+    flex-direction: column-reverse;
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
   &__name {
     font-weight: 700;
     font-size: 0.8rem;

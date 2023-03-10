@@ -4,13 +4,17 @@ import Button from "../Button/Button";
 import logo from "../../assets/Logo/logo.svg";
 import mohan from "../../assets/Images/Mohan.jpg";
 
-function Header() {
+function Header({ DarkMode, setDarkMode }) {
   return (
-    <header className="header">
+    <header className={`header ${DarkMode ? `header--dark-mode` : ``}`}>
       <div className="header__container">
         <Link to="/" title="home">
           <img src={logo} className="header__logo" alt="logo" />
         </Link>
+        <button
+          className="toggle"
+          onClick={() => setDarkMode(!DarkMode)}
+        ></button>
         <div className="header__search">
           <form id="header__form" className="header__form">
             <label htmlFor="search" className="header__label"></label>
