@@ -23,7 +23,9 @@ function VideoDetails(props) {
           <p className="videoDetails__views">{props.selectedVideo.views}</p>
         </div>
       </div>
-      <p className="videoDetails__description">{props.selectedVideo.description}</p>
+      <p className="videoDetails__description">
+        {props.selectedVideo.description}
+      </p>
     </section>
   );
 }

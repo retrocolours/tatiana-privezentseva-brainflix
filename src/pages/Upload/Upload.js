@@ -20,8 +20,6 @@ function Upload() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(videoDescription, videoTitle);
-    console.log(event.target.videoDescription.value);
     if (videoTitle === "" || videoDescription === "") {
       alert("Please fill in all fields");
     } else {
@@ -62,7 +60,6 @@ function Upload() {
                   onChange={handleChangeTitle}
                   value={videoTitle}
                 />
-                
 
                 <label
                   htmlFor="description"

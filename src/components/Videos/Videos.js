@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Videos(props) {
   function scrollToTop() {
-    window.scrollTo({top: 0, behavior: "smooth"})
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
   return (
     <section className="videos">

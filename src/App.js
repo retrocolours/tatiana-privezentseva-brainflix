@@ -15,13 +15,7 @@ function App() {
         <Header DarkMode={DarkMode} setDarkMode={setDarkMode} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route
-            path="/upload"
-            element={
-              <Upload />
-            }
-          />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="/upload" element={<Upload />} />
           <Route path="videos/:videoId" element={<Home />} />
         </Routes>
       </BrowserRouter>
