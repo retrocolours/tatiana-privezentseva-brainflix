@@ -135,6 +135,8 @@
   }
 
   ::placeholder {
+    padding-left: 0.2rem;
+    color: $secondary-color1;
     @include tablet {
       padding-left: 0.5rem;
       font-size: 0.9rem;

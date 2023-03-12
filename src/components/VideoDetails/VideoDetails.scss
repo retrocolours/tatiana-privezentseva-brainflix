@@ -49,11 +49,16 @@
     padding-bottom: 1rem;
     border-bottom: 1px solid $secondary-color2;
     width: 100%;
+    padding-right: 3rem;
     justify-content: space-between;
 
     @include tablet {
       flex-direction: row;
       padding-top: 0;
+    }
+
+    @include desktop {
+      padding-right: 0;
     }
   }
 

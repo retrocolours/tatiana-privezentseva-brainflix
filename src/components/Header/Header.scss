@@ -50,7 +50,7 @@
 
   &__avatar {
     width: 36px;
-    height: 34px;
+    height: 35px;
     border-radius: 50%;
     object-fit: cover;
     object-position: left;
@@ -100,9 +100,9 @@
     background-size: 1rem;
 
     @include tablet {
-      padding-left: 2rem;
       height: 2.5rem;
     }
+    
   }
 }
 

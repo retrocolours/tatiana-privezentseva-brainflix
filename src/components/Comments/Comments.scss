@@ -199,12 +199,15 @@
 }
 
 ::placeholder {
-  color: $primary-color1;
+  color: $secondary-color1;
   font-size: 0.8rem;
   padding: 0.1rem 0;
 
+  @include tablet {
+    padding-left: 0.2rem;
+    font-size: 0.9rem;
+  }
   @include desktop {
     padding-left: 1rem;
-    font-size: 0.9rem;
   }
 }
