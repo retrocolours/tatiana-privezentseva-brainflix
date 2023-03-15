@@ -8,18 +8,18 @@ import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 import Videos from "../../components/Videos/Videos";
 
 import axios from "axios";
+// import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+// dotenv.config();
 
-export const api = "http://localhost:6848"; //local host 8080
+export const api = process.env.REACT_APP_PORT;
 
 function Home() {
+  console.log(process.env);
   const [videos, setVideoData] = useState([]); //array of videos
   const [selectedVideo, setSelectedVideo] = useState({}); //single video
   const { videoId } = useParams();
 
   useEffect(() => {
-    // axios.get("http://localhost:8080/videos").then((response) => {
-    //   console.log(response);
-    // });
     getVideos();
   }, []);
 
@@ -44,7 +44,7 @@ function Home() {
 
   function getVideos() {
     axios
-      .get("http://localhost:6848/videos")
+      .get(`${api}/videos`)
       .then((response) => {
         setVideoData(response.data);
       })
