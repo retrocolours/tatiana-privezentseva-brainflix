@@ -1,11 +1,12 @@
 import "./VideoPlayer.scss";
+import { api } from "../../pages/Home/Home";
 
-function VideoPlayer(props) {
+function VideoPlayer({ selectedVideo }) {
   return (
     <video
       className="video"
       controls
-      poster={props.selectedVideo.image}
+      poster={`${api}/${selectedVideo.image}`}
     ></video>
   );
 }

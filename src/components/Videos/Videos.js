@@ -1,5 +1,6 @@
 import "./Videos.scss";
 import { Link } from "react-router-dom";
+import { api } from "../../pages/Home/Home";
 
 function Videos(props) {
   function scrollToTop() {
@@ -19,7 +20,11 @@ function Videos(props) {
             onClick={scrollToTop}
           >
             <div className="videos__picture">
-              <img className="videos__image" src={video.image} alt="video" />
+              <img
+                className="videos__image"
+                src={`${api}${video.image}`}
+                alt="video"
+              />
             </div>
             <div className="videos__info">
               <p className="videos__name">{video.title}</p>

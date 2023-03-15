@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { api } from "../Home/Home";
 
 import Button from "../../components/Button/Button";
 import UploadVideo from "../../assets/Images/UploadVideo.jpg";
 import "./Upload.scss";
+import axios from "axios";
 
 function Upload() {
   const navigate = useNavigate();
@@ -23,8 +25,20 @@ function Upload() {
     if (videoTitle === "" || videoDescription === "") {
       alert("Please fill in all fields");
     } else {
-      alert("Thank you for uploading!");
-      navigate("/");
+      axios
+        .post(`${api}/videos`, {
+          title: videoTitle,
+          description: videoDescription,
+        })
+        .then(() => {
+          alert("Thank you for uploading!");
+          navigate("/");
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+
+      event.target.reset();
     }
   };
 
