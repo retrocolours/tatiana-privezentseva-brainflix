@@ -53,6 +53,8 @@ function Home() {
       });
   }
 
+  if (!Object.keys(selectedVideo).length) return <div>Loading</div>;
+
   return (
     <>
       <VideoPlayer selectedVideo={selectedVideo} />
