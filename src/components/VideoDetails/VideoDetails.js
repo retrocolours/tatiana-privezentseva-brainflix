@@ -1,5 +1,6 @@
 import "./VideoDetails.scss";
 
+
 function VideoDetails(props) {
   return (
     <section className="videoDetails">

@@ -7,6 +7,7 @@ function VideoPlayer({ selectedVideo }) {
       className="video"
       controls
       poster={`${api}/${selectedVideo.image}`}
+      alt="video"
     ></video>
   );
 }

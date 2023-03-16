@@ -45,6 +45,7 @@
       margin-left: 8rem;
       margin-right: 6rem;
       margin-bottom: 1rem;
+      max-width: 1200px;
     }
   }
 
@@ -130,7 +131,7 @@
   &__input--description {
     height: 5.5rem;
     @include desktop {
-      height: 5.7rem;
+      height: 6rem;
     }
   }
 
@@ -156,8 +157,8 @@
     }
 
     @include desktop {
-      margin-right: 6rem;
-      margin-left: 8rem;
+     margin-right: 0;
+      margin-left: 16rem;
       border-top: none;
     }
   }
