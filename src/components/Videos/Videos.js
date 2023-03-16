@@ -2,7 +2,7 @@ import "./Videos.scss";
 import { Link } from "react-router-dom";
 import { api } from "../../pages/Home/Home";
 
-function Videos(props) {
+function Videos({ selectedVideo, videos }) {
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -10,8 +10,8 @@ function Videos(props) {
     <section className="videos">
       <h2 className="videos__title">Next Videos</h2>
 
-      {props.videos
-        .filter((video) => video.id !== props.selectedVideo.id)
+      {videos
+        .filter((video) => video.id !== selectedVideo.id)
         .map((video) => (
           <Link
             className="videos__box"
