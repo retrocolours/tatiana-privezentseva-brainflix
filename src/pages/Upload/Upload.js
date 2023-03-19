@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../Home/Home";
-
 import Button from "../../components/Button/Button";
 import UploadVideo from "../../assets/Images/UploadVideo.jpg";
 import "./Upload.scss";
@@ -22,7 +21,7 @@ function Upload() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (videoTitle === "" || videoDescription === "") {
+    if (videoTitle.trim() === "" || videoDescription.trim() === "") {
       alert("Please fill in all fields");
     } else {
       axios
@@ -63,7 +62,7 @@ function Upload() {
               </div>
               <div className="form__wrapper">
                 <label htmlFor="name" className="form__label--title">
-                  Title your video{" "}
+                  Title your video
                 </label>
                 <input
                   id="name"
@@ -79,7 +78,7 @@ function Upload() {
                   htmlFor="description"
                   className="form__label--description"
                 >
-                  Add a video description{" "}
+                  Add a video description
                 </label>
                 <textarea
                   id="description"

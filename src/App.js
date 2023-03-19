@@ -3,7 +3,6 @@ import { useState } from "react";
 import Header from "./components/Header/Header.js";
 import Home from "./pages/Home/Home";
 import Upload from "./pages/Upload/Upload";
-
 import "./App.scss";
 
 function App() {
